@@ -30,17 +30,19 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				 <cloudhubDeployment>
-			         <uri>https://anypoint.mulesoft.com/</uri>
-			         <muleVersion>4.4.0</muleVersion>
-				 <username>bishnukumar1</username>
-			         <password>Sahakar@123</password>
-			         <applicationName>sahakar-sfdc-sys-qa</applicationName>
-				 <environment>Sandbox</environment>
-				 <workers>1</workers>
-				 <workerType>micro</workerType>		
-				 </cloudhubDeployment>			
-				</configuration>
+   <cloudHubDeployment>
+      <uri>${anypoint.uri}</uri>
+      <muleVersion>${muleVersion}</muleVersion>
+      <businessGroup>${businessGroup}</businessGroup>
+      <username>${username}</username>
+      <password>${password}</password>
+      <applicationName>${applicationName}</applicationName>
+      <environment>${environment}</environment>
+      <region>${region}</region>
+      <workers>${workers}</workers>
+      <workerType>${workerType}</workerType>
+   </cloudHubDeployment>
+</configuration>
 			</plugin>
 		</plugins>
 	</build>
