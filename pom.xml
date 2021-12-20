@@ -40,6 +40,7 @@
       <environment>${environment}</environment>
       <workers>${workers}</workers>
       <workerType>${workerType}</workerType>
+	   <objectStoreV2>true</objectStoreV2>
    </cloudHubDeployment>
 </configuration>
 			</plugin>
