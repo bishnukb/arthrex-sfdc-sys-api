@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="getContact-pf" doc:id="b42d1b1e-a435-4ee9-bca2-e7899a1cfe3f" >
 		<http:listener doc:name="/GET contact" doc:id="a0f0dc96-274b-44e6-bc8e-a7253dd66e11" config-ref="HTTP_Listener_config" path="/contact"/>
-		<ee:transform doc:name="Transform Message" doc:id="5600007c-96e7-4cc7-83f5-ee193a5632c1" >
+		<ee:transform doc:name="Transform Response Message" doc:id="5600007c-96e7-4cc7-83f5-ee193a5632c1" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
