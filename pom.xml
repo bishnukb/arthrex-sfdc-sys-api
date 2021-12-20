@@ -29,6 +29,18 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+				 <cloudhubDeployment>
+				 <username>bishnukumar1</username>
+				 <environment>Sandbox</environment>
+				 <workers>1</workers>
+				 <workerType>micro</workerType>
+				 <applicationName>sahakar-sfdc-sys-qa</applicationName>
+				 <password>Sahakar@123</password>
+				 <muleVersion>4.4.0</muleVersion>
+				 </cloudhubDeployment>
+			
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
